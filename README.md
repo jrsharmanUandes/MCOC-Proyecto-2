@@ -13,6 +13,6 @@ Gabriel Riquelme
 John Sharman
 Nicolas Yeomans
 
-Entrega 3: Modelación de perfil de velocidad de una partícula 
+Entrega 3: Modelación del perfil de velocidad de una partícula 
 ==============
 Se modeló el comportamiento de una partícula dado un perfil de velocidades sencillo en dos dimensiones. Para la evaluación de fuerzas sobre la partícula se  tomaron en cuenta la gravedad y la fuerza de arrastre. 
