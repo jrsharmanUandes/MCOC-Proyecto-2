@@ -26,4 +26,5 @@ Mediante el código realizado se obtuvo el siguiente gráfico, el cual indica la
 
 Al utilizar la integración propia de python y agregar la condición de rebote de la partícula con el fondo se obtuvo la siguiente gráfica para la posición en el tiempo.
 
-![imagen_entrega_03](https://user-images.githubusercontent.com/53490100/66012023-cb192f80-e49b-11e9-8ab6-5f0ec416600f.PNG)
+![con_rebote](https://user-images.githubusercontent.com/53490100/66012138-4f6bb280-e49c-11e9-9af2-b6b18cd7ac7f.PNG)
+
