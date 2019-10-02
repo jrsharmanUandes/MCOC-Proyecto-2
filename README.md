@@ -28,3 +28,4 @@ Al utilizar la integración propia de python y agregar la condición de rebote d
 
 ![con_rebote](https://user-images.githubusercontent.com/53490100/66012138-4f6bb280-e49c-11e9-9af2-b6b18cd7ac7f.PNG)
 
+Al observar el último gráfico obtenido, se puede apreciar que modela de mejor forma el comportamiento de una partícula al ser arrastrada por un fluído, esto corresponde al inicio de la modelación, pues falta incorporar fuerzas a las cuales está sometida la partícula dentro del fluído.
