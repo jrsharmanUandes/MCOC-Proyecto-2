@@ -23,3 +23,7 @@ Resultados
 Mediante el código realizado se obtuvo el siguiente gráfico, el cual indica la posición de una partícula, arrastrada por el fluido en sus com ponentes X,Y:
 
 ![imagen_entrega_03](https://user-images.githubusercontent.com/53490100/66011537-ee42df80-e499-11e9-8348-09c269d8cbe5.PNG)
+
+Al utilizar la integración propia de python y agregar la condición de rebote de la partícula con el fondo se obtuvo la siguiente gráfica para la posición en el tiempo.
+
+![imagen_entrega_03](https://user-images.githubusercontent.com/53490100/66012023-cb192f80-e49b-11e9-8ab6-5f0ec416600f.PNG)
