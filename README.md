@@ -19,3 +19,4 @@ Se modeló el comportamiento de una partícula dado un perfil de velocidades sen
 
 Resultados
 ==============
+![imagen_entrega_03](https://user-images.githubusercontent.com/53490100/66011537-ee42df80-e499-11e9-8348-09c269d8cbe5.PNG)
