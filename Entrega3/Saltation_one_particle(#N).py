@@ -30,9 +30,9 @@ ti= 0.*_s          #tiempo actual
 N=10
 posicion=[]
 velocidad=[]
-for i in range (0,1):
+for i in range (0,N):
         a=float(random.randint(0,25))
-        x0=array([0.,1.*_mm], dtype=double)  # particula en posicion cero 
+        x0=array([0.,a*_mm], dtype=double)  # particula en posicion cero 
         print x0
         v0=array([1.,1.], dtype=double) # velocidad en 1 m/s para x y en y
 
