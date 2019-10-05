@@ -1,6 +1,30 @@
-from matplotlib.pylab import*
+ 
+from matplotlib.pylab import *
+from scipy.integrate import odeint
 import random 
+
+
+
+def particula(z,t):
+            xi=z[:2]
+            vi=z[2:]
+            vf=array([vfx,vfy])
+            vrel=vf-vi
+
+            fD=(0.5*Cd*rho_agua*norm(vrel)*A)*vrel
+            #fL=3.0/3.0*alpha*cD
+            Fi=W+fD+fB
+            if xi[1]<0:
+                Fi[1]+=-k_penal*xi[1]
+            zp=zeros(4)
+            zp[:2]=vi
+            zp[2:]=Fi/m
+            return zp
+    
+
+
 # unidades base SI(m,kg,s)
+
 _m=1
 _kg=1
 _s=1
@@ -49,23 +73,7 @@ for i in range (0,N):
         norm=lambda  v: sqrt(dot(v,v))
 
         k_penal=1000*0.5*Cd*rho_agua*norm(v0)/(1*_mm)
-        def particula(z,t):
-            xi=z[:2]
-            vi=z[2:]
-            vf=array([vfx,vfy])
-            vrel=vf-vi
-
-            fD=(0.5*Cd*rho_agua*norm(vrel)*A)*vrel
-            #fL=3.0/3.0*alpha*cD
-            Fi=W+fD+fB
-            if xi[1]<0:
-                Fi[1]+=-k_penal*xi[1]
-            zp=zeros(4)
-            zp[:2]=vi
-            zp[2:]=Fi/m
-            return zp
-    
-        from scipy.integrate import odeint
+        
         
         z0=zeros(4)
         z0[:2]=x0
@@ -98,7 +106,3 @@ for i in range(len(posicion)):
     plot(t,v_[:,0], label="vx")
     plot(t,v_[:,1], label="vy")
 show()
-
-
-
-
