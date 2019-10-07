@@ -14,7 +14,6 @@ def particula(z,t):
             vi=z[2:]
             vf=array([vfx,vfy])
             vrel=vf-vi
-
             fD=(0.5*Cd*rho_agua*norm(vrel)*A)*vrel
             #fL=3.0/3.0*alpha*cD
             Fi=W+fD+fB
@@ -40,29 +39,33 @@ vfy=0.0   *_m/_s    #m/s
 
 # parametros 
 g=9.81*_m/_s**2
-d=1*_mm
+d=[1.*_mm,2.*_mm,3.*_mm,4.*_mm,5.*_mm]
 rho_agua=1000.*_kg/(_m**3)
 rho_particula=2700*_kg/(_m**3)
 Cd=0.47  # drag para una particula # coeficiente de drag
-
-
-A=pi*(d/2)**2
-V=(4./3.)*pi*(d/2)**3
-m=rho_particula*V              # masa de particula
 
 dt= 0.001*_s     #paso de tiempo 
 tmax=2*_s        # tiempo maximo de simulacion
 ti= 0.*_s          #tiempo actual
 
 # prueba para n particulas 
-N=10
+N=len(d)
 posicion=[]
 velocidad=[]
 for i in range (0,N):
+        # parametros 
+        A=pi*(d[i]/2)**2
+        V=(4./3.)*pi*(d[i]/2)**3
+        m=rho_particula*V              # masa de particula
         a=float(random.randint(0,25))
-        x0=array([0.,a*_mm], dtype=double)  # particula en posicion cero 
-        print x0
-        v0=array([1.,1.], dtype=double) # velocidad en 1 m/s para x y en y
+        b=float(random.randint(0,25))
+        x0=array([b*_mm,a*_mm], dtype=double)  # particula en posicion cero 
+        print "Particula N:", i+1
+        print " Posicion inicial:",x0
+        v_x=float(random.randint(1,5))
+        v_y=float(random.randint(1,5))
+        v0=array([v_x*_m/_s,v_y*_m/_s], dtype=double) # velocidad en 1 m/s para x y en y
+        print " Velocidad inicial:",v0
 
         xi=x0#zeros(2, dtype=double)           # posicion actual
         vi=v0#zeros(2, dtype=double)           # velocidad actual
@@ -97,7 +100,9 @@ for i in range(len(posicion)):
     x_=posicion[i]
     plot(x_[:,0],x_[:,1])
     ylim([0,10*_mm])
-
+    plt.title("Rebote de N particulas")
+    plt.xlabel("Posicion en x")
+    plt.ylabel("Posicion en Y")
 
 figure()
 for i in range(len(posicion)):
@@ -106,7 +111,13 @@ for i in range(len(posicion)):
     subplot(2,1,1)
     plot(t,x_[:,0], label="x")
     plot(t,x_[:,1], label="y")
+    plt.title("Posicion de N particulas")
+    plt.xlabel("Tiempo")
+    plt.ylabel("Posicion")
     subplot(2,1,2)
     plot(t,v_[:,0], label="vx")
     plot(t,v_[:,1], label="vy")
+    plt.title("Velocidad de N particulas")
+    plt.xlabel("Tiempo")
+    plt.ylabel("Velocidad")
 show()
