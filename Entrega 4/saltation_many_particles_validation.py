@@ -2,10 +2,11 @@
 """
 
 """
-
+from timeit import timeit
 from matplotlib.pylab import *
 from scipy.integrate import odeint
 import random 
+
 
 
 
@@ -120,4 +121,5 @@ for i in range(len(posicion)):
     plt.title("Velocidad de N particulas")
     plt.xlabel("Tiempo")
     plt.ylabel("Velocidad")
+print(timeit("'Hello, world!'.replace('Hello', 'Goodbye')"))
 show()
