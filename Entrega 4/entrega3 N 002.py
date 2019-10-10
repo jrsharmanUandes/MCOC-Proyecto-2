@@ -14,16 +14,16 @@ _s=1
 _mm=1e-3*_m
 _cm=1e-2*_m
 _gr=1e-3*_kg
-_in=0.56*_cm
+_in=2.54*_cm
 
 g=9.81*_m/_s**2 	#Aceleracion de gravedad
-dm=10.*_mm 		#Diametro medio de particulas
+dm=1.*_mm 		#Diametro medio de particulas
 
 rho_agua=1000.*_kg/(_m**3) 	#Densidad del agua
 rho_particula=2700*_kg/(_m**3) 	#Densidad particula
 
 dt= 0.001*_s     #Paso de tiempo 
-tmax=1*_s        #Tiempo maximo de simulacion
+tmax=0.5*_s        #Tiempo maximo de simulacion
 ti= 0.*_s        #Tiempo actual
 
 ### Definicion variables particula
@@ -31,9 +31,9 @@ Nparticulas = 3
 
 d = rand(Nparticulas)*dm + dm/2	#Array de diametros de cada particula
 
-x0 = rand(Nparticulas)*10*dm		#Posiciones iniciales de cada particula
-y0 = rand(Nparticulas)*3*dm + max(d)/2
-print y0
+x0 = rand(Nparticulas)*100*dm		#Posiciones iniciales de cada particula
+y0 = rand(Nparticulas)*30*dm + max(d)/2
+
 
 vx0 = rand(Nparticulas)/2 			#Velocidades iniciales de cada particula
 vy0 = rand(Nparticulas)/2 
@@ -65,7 +65,7 @@ factor = 1e2
 
 
 def velocidades(x,d):	#Define perfil logaritmico de aceleraciones en el eje y
-	z = x[1] 	#La variable z es la altura a la que se encuentra la particula
+	z = x[1]/d 	#La variable z es la altura a la que se encuentra la particula
 	if z > 1./30:
 		uf = ustar*log(30.*z)/0.41
 	else:
@@ -76,7 +76,7 @@ print "1/30 {}".format(1/30.)
 vfx = velocidades([0, 4*dm],dm)[0]
 print ("Vfx {}".format(vfx))
 
-k_penal = factor*0.5*Cd*rho_agua*A*norm(vfx)**2/(1*_mm)
+k_penal = factor*0.5*Cd*rho_agua*A*norm(vfx)*2/(1*_mm) 
 
 def particula(z,t):
 	zp = zeros(4*Nparticulas)
@@ -85,22 +85,23 @@ def particula(z,t):
 		mi = m[i]
 		Ai = A[i]
 		Wi = W[i]
-		xi = z[(4*i):(4*i+2)]
-		vi = z[(4*i+2):(4*i+4)]
-		vf = velocidades(xi,di)
-		vf_top = norm(velocidades(xi + di/2 * jhat,di)) 
-		vf_bot = norm(velocidades(xi - di/2 * jhat,di))
-		vrel = vf - vi
-		fD = (0.5*Cd*alpha*rho_agua*norm(vrel)*Ai)*vrel
-		fL = (0.5*Cl*alpha*rho_agua*(vf_top**2-vf_bot**2)*Ai)*jhat*0
+		xi = z[4*i:(4*i+2)]
+		vi = z[4*i+2:(4*i+4)] 	
+		vf = velocidades(xi,di) #Velocidad del flujo 
+		vf_top = norm (velocidades(xi + (di/2) *jhat,di)) #Velocidad en parte superior de particula
+		vf_bot = norm (velocidades(xi - (di/2) *jhat,di)) #Velocidad en parte inferior de particula
+		vrel = vf - vi #Diferencia de velocidades en parte superior e inferior
+		fD = (0.5*Cd*alpha*rho_agua*norm(vrel)*Ai)*vrel #Fuerza de arrastre (drag)
+		fL = (0.5*Cl*alpha*rho_agua*(vf_top*2 - vf_bot*2)*Ai)*jhat #Fuerza de levante
 
 		Fi = Wi + fD +fL #Fuerzas aplicadas a la particula
 		### Verifica de que la particula no pase a negativo ###
-		if xi[1] < di/2.:
-			Fi[1] += -k_penal[i]*(xi[1]-di/2.)
+		if xi[1] < di/2: 
+			Fi[1]+= -k_penal[i]*(xi[1]-di/2)
 
-		zp[(4*i):(4*i+2)] = vi
-		zp[(4*i+2):(4*i+4)] = Fi/mi
+		zp[4*i:(4*i+2)] = vi
+		zp[4*i+2:(4*i+4)] = Fi / mi
+
 	### Loop para casos de choque ###
 	
 	for i in range(Nparticulas):
@@ -139,16 +140,19 @@ for i in range(Nparticulas):
 	di = d[i]
 	xi = z[:,4*i]/di
 	yi = z[:,4*i+1]/di
-	print yi
 	col = rand(3)
 	plot(xi[0],yi[0],"o", color="r")
 	plot(xi,yi,"--.", color=col)
-	for x,y in zip(xi,yi):
+	for x,y in zip(xi,yi): #Marca inicio de particula
 		ax.add_artist(Circle(xy=(x,y),radius=d[i]/2,color=col,alpha=0.7))
+	for j in range(int(tmax/dt)): #Marca esferas
+		if j%8 == 0: 
+			circle = plt.Circle((xi[j], yi[j]), d[i]/2, color ='r', clip_on=True)
+		ax.add_artist(circle)	
+		
+	#plot (xi[0], yi[0], "o", color ="r")
+	plot (xi,yi,"--.", color=col)
 
-
-
-ax.axhline(0.5*dm,color="k", linestyle="--")
 """
 
 figure()
@@ -164,4 +168,4 @@ for i in range(Nparticulas):
 	plt.ylabel("Posicion en Y")
 """
 
-show()
+#show()
