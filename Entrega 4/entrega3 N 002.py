@@ -109,7 +109,7 @@ def particula(z,t):
 		for j in range(Nparticulas):
 			if i > j:
 				xj = z[(4*j):(4*j+2)]
-				rij = xi - xj 			#Distancia entre los centros de las particulas
+				rij = xj - xi 			#Distancia entre los centros de las particulas
 				dist = d[i]/2 + d[j]/2 	#Suma de los radios de las particulas i y j
 				if norm(rij) < dist:	#Verificación de que las distancias sean mayores a la suma de sus radios
 					delta = dist - norm(rij) #Distancia de traslape
