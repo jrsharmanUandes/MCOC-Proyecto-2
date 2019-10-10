@@ -27,7 +27,7 @@ tmax=0.5*_s        #Tiempo maximo de simulacion
 ti= 0.*_s        #Tiempo actual
 
 ### Definicion variables particula
-Nparticulas = 3
+Nparticulas = 20
 
 d = rand(Nparticulas)*dm + dm/2	#Array de diametros de cada particula
 
