@@ -29,3 +29,9 @@ Al utilizar la integración propia de python y agregar la condición de rebote d
 ![con_rebote](https://user-images.githubusercontent.com/53490100/66012138-4f6bb280-e49c-11e9-9af2-b6b18cd7ac7f.PNG)
 
 Al observar el último gráfico obtenido, se puede apreciar que modela de mejor forma el comportamiento de una partícula al ser arrastrada por un fluído, esto corresponde al inicio de la modelación, pues falta incorporar fuerzas a las cuales está sometida la partícula dentro del fluído.
+
+Múltiples partículas
+==============
+
+Para incorporar en el modelo la simulación del movimiento de N partículas, fue necesario definir la posición en el tiempo de cada partícula. Además de esto, para hacer aún más real la simulación, se creo una función la cual define el choque de partículas. Para identificar que partículas chocan, se establece un vector de distancia, la cual compara la distacia entre el centro de dos particulas en relación a los radios de estas, esto indica si las partículas chocan o no. Al producirse la colisión, las partículas en cuestión, cambian su velocidad, esto se debe a la conservación de momentum.
+
