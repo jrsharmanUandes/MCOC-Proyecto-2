@@ -32,7 +32,7 @@ Al observar el último gráfico obtenido, se puede apreciar que modela de mejor 
 
 Entrega 4: Validación de múltiples partículas 
 ==============
-Para incorporar en el modelo la simulación del movimiento de múltiples partículas (N), fue necesario definir la posición en el tiempo de cada partícula para esto se utilizaron integradores de Python como "odeint" el cual recorre una función en el tiempo "t", es decir recorre la función "t" veces. Para hacer aún más real la simulación, se creó la función partículas la cual define el choque de partículas, además, se consideró una función con las fuerzas hidrodinámicas (fuerza de arrastre(drag), fuerza de levante(liftting) y fuerza peso).
+Para incorporar en el modelo la simulación del movimiento de múltiples partículas (N), fue necesario definir la posición en el tiempo de cada partícula para esto se utilizaron integradores de Python como "odeint" el cual recorre una función en el tiempo "t", es decir recorre la función "t" veces. Para hacer aún más real la simulación, se creó la función partícula la cual define el choque de partículas, además, se consideró una función con las fuerzas hidrodinámicas (fuerza de arrastre(drag), fuerza de levante(liftting) y fuerza peso) y con relacion al choque de las particulas en el fondo.
 Para identificar que partículas chocan, se establece un vector de distancia, la cual compara la distancia entre el centro de dos partículas en relación con los radios de estas, esto indica si las partículas chocan o no. Al producirse la colisión, las partículas en cuestión cambian su velocidad y posición, esto se debe a la conservación de momentum.
 
 Cabe destacar que para efectos de este modelo se consideró un numero de partículas N=2,5,10,20.
