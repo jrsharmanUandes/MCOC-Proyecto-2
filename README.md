@@ -39,10 +39,10 @@ Cabe destacar que para efectos de este modelo se consideró un numero de partíc
 
 Parámetros de diseño:
 ===============
-*Densidad de partícula:  2650 kg/m3. 
-*Densidad del agua: 1000 kg/m3.
-*Partícula esférica
-*Diámetro de la partícula: ### mm.
-*Constante de arrastre(drag): 0.47 
-*Constante de levante(liftting):0.2
-*Esfuerzo de corte:0.067
+- Densidad de partícula:  2650 kg/m3. 
+- Densidad del agua: 1000 kg/m3.
+- Partícula esférica
+- Diámetro de la partícula: ### mm.
+- Constante de arrastre(drag): 0.47 
+- Constante de levante(liftting):0.2
+- Esfuerzo de corte:0.067
