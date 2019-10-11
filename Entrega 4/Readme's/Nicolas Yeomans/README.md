@@ -4,6 +4,7 @@ Readme Personal
 Nicolás Yeomans
 
 El objetivo principal de esta entrega consiste en medir el tiempo y realizar una validación respecto a la simulación del transporte de sedimentos.
+
 Características de computador:
 ===============
 Modelo: Acer Aspire A315-51
