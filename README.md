@@ -30,8 +30,19 @@ Al utilizar la integración propia de python y agregar la condición de rebote d
 
 Al observar el último gráfico obtenido, se puede apreciar que modela de mejor forma el comportamiento de una partícula al ser arrastrada por un fluído, esto corresponde al inicio de la modelación, pues falta incorporar fuerzas a las cuales está sometida la partícula dentro del fluído.
 
-Múltiples partículas
+Entrega 4: Validación de múltiples partículas 
 ==============
+Para incorporar en el modelo la simulación del movimiento de múltiples partículas (N), fue necesario definir la posición en el tiempo de cada partícula para esto se utilizaron integradores de Python como "odeint" el cual recorre una función en el tiempo "t", es decir recorre la función "t" veces. Para hacer aún más real la simulación, se creó la función partículas la cual define el choque de partículas, además, se consideró una función con las fuerzas hidrodinámicas (fuerza de arrastre(drag), fuerza de levante(liftting) y fuerza peso).
+Para identificar que partículas chocan, se establece un vector de distancia, la cual compara la distancia entre el centro de dos partículas en relación con los radios de estas, esto indica si las partículas chocan o no. Al producirse la colisión, las partículas en cuestión cambian su velocidad y posición, esto se debe a la conservación de momentum.
 
-Para incorporar en el modelo la simulación del movimiento de N partículas, fue necesario definir la posición en el tiempo de cada partícula. Además de esto, para hacer aún más real la simulación, se creo una función la cual define el choque de partículas. Para identificar que partículas chocan, se establece un vector de distancia, la cual compara la distacia entre el centro de dos particulas en relación a los radios de estas, esto indica si las partículas chocan o no. Al producirse la colisión, las partículas en cuestión, cambian su velocidad, esto se debe a la conservación de momentum.
+Cabe destacar que para efectos de este modelo se consideró un numero de partículas N=2,5,10,20.
 
+Parámetros de diseño:
+===============
+-Densidad de partícula:  2650 kg/m3. 
+-Densidad del agua: 1000 kg/m3.
+-Partícula esférica
+-Diámetro de la partícula: ### mm.
+-Constante de arrastre(drag): 0.47 
+-Constante de levante(liftting):0.2
+-Esfuerzo de corte:0.067
