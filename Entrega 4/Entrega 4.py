@@ -35,6 +35,19 @@ y0 = rand(Nparticulas)*30*d + d/2
 
 vx0 = rand(Nparticulas)/2           #Velocidades iniciales de cada particula
 vy0 = rand(Nparticulas)/2 
+"""
+data = load("initial_condition.npz")
+x0 = data["x0"]
+y0 = data["y0"]
+vx0 = data["vx0"]
+vy0 = data["vy0"]
+Nparticulas = data["Nparticulas"]
+"""
+
+
+
+
+
 
 A=pi*(d/2)**2           #Area de cada particula
 V=(4./3.)*pi*(d/2)**3   #Volumen de cada particula
