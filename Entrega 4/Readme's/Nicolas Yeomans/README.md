@@ -1,7 +1,5 @@
 # MCOC-Proyecto-2
-Readme Personal
-===============
-Nicolás Yeomans
+Readme Personal Nicolás Yeomans
 
 El objetivo principal de esta entrega consiste en medir el tiempo y realizar una validación respecto a la simulación del transporte de sedimentos.
 
