@@ -17,17 +17,21 @@ Tipo de sistema:  Sistema operativo de 64 bits.
 
 Simulación 1:
 ===============
+Tiempo de simulación: 00:22:34
+
 ![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/1.1.JPG)
 ![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/1.2.JPG)
 
 Simulación 2:
 ===============
+Tiempo de simulación: 00:43:22
 
 ![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/2.1.JPG)
 ![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/2.2.JPG)
 
 Simulación 3:
 ===============
+Tiempo de simulación: 00:22:34
 
 ![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/3.1.JPG)
 ![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/3.2.JPG)
