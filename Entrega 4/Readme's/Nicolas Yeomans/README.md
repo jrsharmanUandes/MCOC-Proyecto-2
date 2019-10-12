@@ -13,6 +13,11 @@ Memoria instalada (RAM): 8.00 GB.
 
 Tipo de sistema:  Sistema operativo de 64 bits.
 
+Sitema operativo: Windows 10
+
+Programa Python-2.7 escrtior de texto Sublime text 3
+
+
 Tiempo de simulación:
 ===============
 N=2: Tiempo transcurrido 7.6 segundos.
