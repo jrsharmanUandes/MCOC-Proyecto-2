@@ -41,7 +41,9 @@ De la misma forma que la simulación 1, ambas trayectorias muestran el mismo com
 Simulación 3
 ==========
 
-Tiempo de simulación: 35 seg
+Tiempo de simulación: 6,45 seg
+
+
 
 
 
