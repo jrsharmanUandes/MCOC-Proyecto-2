@@ -15,7 +15,7 @@ Tipo de sistema:  Sistema operativo de 64 bits.
 
 Sitema operativo: Windows 10
 
-Programa Python-2.7 escrtior de texto Sublime text 3
+Programa Python-2.7 escritor de texto Sublime text 3
 
 
 Tiempo de simulación:
