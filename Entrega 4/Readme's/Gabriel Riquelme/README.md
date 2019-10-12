@@ -14,5 +14,11 @@ Memoria instalada (RAM): 12.00 GB.
 
 Tipo de sistema: Sistema operativo de 64 bits.
 
-Tiempo de simulación:
-###Tiempo###
+Simulación 1
+==========
+
+Tiempo de simulación: 160s
+
+
+
+
