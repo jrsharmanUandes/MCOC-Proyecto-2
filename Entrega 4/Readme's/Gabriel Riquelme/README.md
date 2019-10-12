@@ -31,6 +31,17 @@ Simulación 2
 
 Tiempo de simulación: 35 seg
 
+![simulacion_2_1](https://user-images.githubusercontent.com/53490100/66692394-5fda1500-ec74-11e9-99d3-7f5ca6225888.PNG)
+
+![simulacion_2_2](https://user-images.githubusercontent.com/53490100/66692397-741e1200-ec74-11e9-83af-e16d54c8e442.PNG)
+
+De la misma forma que la simulación 1, ambas trayectorias muestran el mismo comportamiento.
+
+
+Simulación 3
+==========
+
+Tiempo de simulación: 35 seg
 
 
 
