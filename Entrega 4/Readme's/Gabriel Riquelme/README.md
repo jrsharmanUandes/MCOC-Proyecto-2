@@ -35,7 +35,6 @@ Tiempo de simulación: 00:00:35
 
 ![simulacion_2_2](https://user-images.githubusercontent.com/53490100/66692397-741e1200-ec74-11e9-83af-e16d54c8e442.PNG)
 
-De la misma forma que la simulación 1, ambas trayectorias muestran el mismo comportamiento.
 
 
 Simulación 3
