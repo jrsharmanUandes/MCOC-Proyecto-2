@@ -47,8 +47,7 @@ Parámetros de diseño:
 - Constante de levante(liftting):0.2
 - Esfuerzo de corte:0.067
 
-
-Entrega 4 - Lectura Código
+Lectura Código
 =================
 Para efectos de código se creó simulación 1,2 y 3 respectivamente, donde cada una lee las condiciones iniciales para cada simulación entregadas por saf correspondientes a pack_validacion, cada una con su respectiva carpeta las cuales corresponden a cada número de partículas.
 
