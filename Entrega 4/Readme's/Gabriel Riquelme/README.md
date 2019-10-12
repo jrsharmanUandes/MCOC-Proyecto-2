@@ -52,6 +52,9 @@ Simulación 4
 
 Tiempo de simulación: 00:16:46 
 
+![simulacion_4_1](https://user-images.githubusercontent.com/53490100/66692790-30c5a280-ec78-11e9-9122-6e3feab0b734.PNG)
+
+![simulacion_4_2](https://user-images.githubusercontent.com/53490100/66692798-476bf980-ec78-11e9-9a85-bff59d5917ea.PNG)
 
 
 
