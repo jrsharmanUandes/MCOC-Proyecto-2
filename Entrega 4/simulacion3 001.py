@@ -214,12 +214,16 @@ show ()
 
 figure()
 for i in range(2):
-	for part in range(Nparticulas):
-		subplot(2,1,i+1)
-		x1 = z[:,part*4:2+part*4]
-		plot(t,x1[:,i],label="x"+str(p+1))
-		plt.title("Particula "+str(p+1)+'\nPosicion')
-		plt.legend()
+    for part in range(Nparticulas):
+        subplot(2,1,i+1)
+        x1 = z[:,part*4:2+part*4]
+        plot(t,x1[:,i])
+        if i==0:
+            plt.ylabel("Xi(t) (m)")
+        else:
+            plt.ylabel("Yi(t) (m)")
+        plt.title("Particula "+str(Nparticulas)+'\nPosicion')
+        plt.legend()
 
 show()
 
