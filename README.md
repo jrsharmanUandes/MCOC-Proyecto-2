@@ -49,5 +49,6 @@ Parámetros de diseño:
 
 Lectura Código
 =================
-Para efectos de código se creó simulación 1,2 y 3 respectivamente, donde cada una lee las condiciones iniciales para cada simulación entregadas por saf correspondientes a pack_validacion, cada una con su respectiva carpeta las cuales corresponden a cada número de partículas.
+Para efectos de código se creó una simulación la cual lee las condiciones iniciales para cada simulación entregada por saf correspondiente a pack_validacion, cada una con su respectiva carpeta para un cierto número de partículas.
+
 
