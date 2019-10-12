@@ -19,26 +19,18 @@ Simulación 1:
 ===============
 Tiempo de simulación: 00:03:34
 
-![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/1.1.JPG)
-![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/1.2.JPG)
 
 Simulación 2:
 ===============
-Tiempo de simulación: 00:36:31
-
-![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/2.1.JPG)
-![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/2.2.JPG)
+Tiempo de simulación: 00:01:32
 
 Simulación 3:
 ===============
-Tiempo de simulación: 00:26:20
+Tiempo de simulación: 00:00:45
 
-![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/3.1.JPG)
-![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/3.2.JPG)
 
 Simulación 4:
 ===============
-Tiempo de simulación: 00:18:22
-![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/4.1.JPG)
-![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/4.2.JPG)
-Se puede observar que a medida que se aumenta la cantidad de partículas en la simulación demora más tiempo.
+Tiempo de simulación: 00:00:18
+
+Se puede observar que a medida que se aumenta la cantidad de partículas en la simulación demora más tiempo, esto debido al procesador del computador utilizado y su capacidad en lo que se refiere al correr Python. 
