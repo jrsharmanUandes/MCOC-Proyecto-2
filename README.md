@@ -51,4 +51,29 @@ Lectura Código
 =================
 Para efectos de código se creó una simulación la cual lee las condiciones iniciales para cada simulación entregada por saf correspondiente a pack_validacion, cada una con su respectiva carpeta para un cierto número de partículas.
 
+Simulación 1
+==========
+![simulacion_1_1](https://user-images.githubusercontent.com/53490100/66692259-032a2a80-ec73-11e9-99a9-eeb704ead90e.PNG)
 
+![simulacion_1_2](https://user-images.githubusercontent.com/53490100/66692291-69af4880-ec73-11e9-8829-879e9a4b12af.PNG)
+
+
+Simulación 2
+==========
+![simulacion_2_1](https://user-images.githubusercontent.com/53490100/66692394-5fda1500-ec74-11e9-99d3-7f5ca6225888.PNG)
+
+![simulacion_2_2](https://user-images.githubusercontent.com/53490100/66692397-741e1200-ec74-11e9-83af-e16d54c8e442.PNG)
+
+
+
+Simulación 3
+==========
+![simulacion_3_1](https://user-images.githubusercontent.com/53490100/66692480-2ce45100-ec75-11e9-899d-150267f282ca.PNG)
+
+![simulacion_3_2](https://user-images.githubusercontent.com/53490100/66692491-3ff72100-ec75-11e9-9ac7-01589732e143.PNG)
+
+Simulación 4
+==========
+![simulacion_4_1](https://user-images.githubusercontent.com/53490100/66692790-30c5a280-ec78-11e9-9122-6e3feab0b734.PNG)
+
+![simulacion_4_2](https://user-images.githubusercontent.com/53490100/66692798-476bf980-ec78-11e9-9a85-bff59d5917ea.PNG)
