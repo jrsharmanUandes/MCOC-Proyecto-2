@@ -15,6 +15,25 @@ Memoria instalada (RAM): 8.00 GB.
 
 Tipo de sistema:  Sistema operativo de 64 bits.
 
-Tiempo de simulación:
+Simulación 1:
 ===============
-###Tiempo###
+![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/1.1.JPG)
+![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/1.2.JPG)
+
+Simulación 2:
+===============
+
+![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/2.1.JPG)
+![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/2.2.JPG)
+
+Simulación 3:
+===============
+
+![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/3.1.JPG)
+![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/3.2.JPG)
+
+Simulación 4:
+===============
+
+![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/4.1.JPG)
+![alt text](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%204/Readme's/Gabriela%20Isidora%20Orellana/4.2.JPG)
