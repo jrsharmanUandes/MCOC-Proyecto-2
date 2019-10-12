@@ -17,7 +17,7 @@ Tipo de sistema: Sistema operativo de 64 bits.
 Simulación 1
 ==========
 
-Tiempo de simulación: 160 seg
+Tiempo de simulación: 00:02:40
 
 ![simulacion_1_1](https://user-images.githubusercontent.com/53490100/66692259-032a2a80-ec73-11e9-99a9-eeb704ead90e.PNG)
 
@@ -29,7 +29,7 @@ Una vez realizada la validación, se puede apreciar el mismo comportamiento de l
 Simulación 2
 ==========
 
-Tiempo de simulación: 35 seg
+Tiempo de simulación: 00:00:35 
 
 ![simulacion_2_1](https://user-images.githubusercontent.com/53490100/66692394-5fda1500-ec74-11e9-99d3-7f5ca6225888.PNG)
 
@@ -41,8 +41,16 @@ De la misma forma que la simulación 1, ambas trayectorias muestran el mismo com
 Simulación 3
 ==========
 
-Tiempo de simulación: 6,45 seg
+Tiempo de simulación: 00:00_06
 
+![simulacion_3_1](https://user-images.githubusercontent.com/53490100/66692480-2ce45100-ec75-11e9-899d-150267f282ca.PNG)
+
+![simulacion_3_2](https://user-images.githubusercontent.com/53490100/66692491-3ff72100-ec75-11e9-9ac7-01589732e143.PNG)
+
+Simulación 4
+==========
+
+Tiempo de simulación: 00:16:46 
 
 
 
