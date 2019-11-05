@@ -21,7 +21,7 @@ rho_agua = 1000.*_kg/(_m**3)        # Densidad del agua
 rho_particula = 2650.*_kg/(_m**3)   # Densidad de las particulillas
 
 dt = 0.00001*_s      # paso de tiempo 
-tmax = 0.01*_s      # tiempo maximo de simulacion
+tmax = 0.2*_s      # tiempo maximo de simulacion
 t = arange(0, tmax, dt)
 Nt=len(t)
 Cd = 0.47    #Coeficiente de arrastre
