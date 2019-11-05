@@ -3,6 +3,8 @@ from matplotlib.pylab import *
 datos = loadtxt("resultados.txt")
 print datos.shape
 
+d=0.15e-3
+
 Nparticulas = (datos.shape[1]-1)/4
 
 figure()
@@ -13,8 +15,8 @@ ax = gca()
 color = "#006B93"
 colorlist = []
 for i in range(Nparticulas):
-	xi = datos[:,1+4*i]
-	yi = datos[:,1+4*i+1]
+	xi = datos[:,1+4*i]/d
+	yi = datos[:,1+4*i+1]/d
 	col = rand(3)
 	colorlist.append(col)
 	ax.plot(xi[0::100], yi[0::100], "o", color=col)
