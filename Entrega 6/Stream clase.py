@@ -240,7 +240,7 @@ if doit:
     while dt*k< int(tmax/dt-1)*dt:
         t_paso=[dt*k,dt*(k+1)] # paso de tiempo el cual se evaluan las particulas 
         #print t_paso        
-        resultados.write("{}".format(dt*k))
+        resultados.write("{} ".format(dt*k))
         savetxt(resultados,zk,fmt="%.10e ",newline="")
         resultados.write("\n")
 
