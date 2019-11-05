@@ -2,7 +2,7 @@
 Readme Personal
 John Sharman
 
-Esta entrega tiene como objetivo medir y comparar el desempeño de los computadores de cada integrante. En relación a su modelo, sistema operativo y características.
+Esta entrega tiene como objetivo medir y comparar el desempeño de los computadores de cada integrante. En relación a su modelo, sistema operativo y características. Además se busca demostrar que el código fue optimizado de tal forma de que se obtenga una linealidad dentro de la cantidad de particulas y el tiempo de cálculo de estas.
 
 Características de computador:
 ==========
@@ -25,9 +25,9 @@ Simulación
       5 particulas      33,4 s
       10 particulas     154,4 s
       20 particulas     1006,7 s
+      100 particulas
 
 
 Concluciones
 ==========
-Se puede observar claramente un aumento en el tiempo de proceso y el número de particualas procesadas. Haciendo una regreción de la cantidad de particulas vs tiempo resulta una ecuacion perfectamente cuadratica, lo que lleva a concluir que el tiempo se forma al cuadrado con respecto al aumento de particulas. Se recomienda reducir la cantidad de particulas o reducir el tiempo de simulación para reducir el tiempo. 
 
