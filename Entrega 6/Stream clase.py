@@ -128,9 +128,9 @@ def fuerzas_hidrodinamicas(x,v):
     Fh=fW+fL+fD
     return Fh 
 def choques(z,zp):
-    for i in range(Nparticulas):
+    for i in range(len(z)/4):
         xi = z[(4*i):(4*i+2)]
-        for j in range(Nparticulas):
+        for j in range(len(z)/4):
             if i > j:
                 xj = z[(4*j):(4*j+2)]
                 rij = xj - xi           #Vector entre los centros de las particulas
@@ -141,14 +141,14 @@ def choques(z,zp):
                     Fi = -Fj    #Fuerza con que se repele la particula i
                     zp[(4*i+2):(4*i+4)] += Fi/m #calculo de posicion
                     zp[(4*j+2):(4*j+4)] += Fj/m
+    
     return zp
-def particulas(z,t):
-    zp = zeros(4*Nparticulas)
-    for i in range(Nparticulas):
+def M_particulas(z,t):
+    zp = zeros(len(z))
+    for i in range(len(z)/4):
         xi = z[4*i:(4*i+2)]
         vi = z[4*i+2:(4*i+4)]   
 
-        
         Fi = fuerzas_hidrodinamicas(xi,vi) #Fuerzas aplicadas a la particula
         ### Verifica de que la particula no pase a negativo ###
         
@@ -165,9 +165,9 @@ def particulas(z,t):
     
     zp=choques(z,zp)
     return zp   
-def particula(z,t):
-    zp = zeros(4*Nparticulas)
-    for i in range(Nparticulas):
+def una_particula(z,t):
+    zp = zeros(len(z))
+    for i in range(len(z)/4):
         xi = z[4*i:(4*i+2)]
         vi = z[4*i+2:(4*i+4)]   
 
@@ -184,9 +184,7 @@ def particula(z,t):
         zp[4*i:(4*i+2)] = vi
         zp[4*i+2:(4*i+4)] = Fi / m
 
-    ### Loop para casos de choque ###
     return zp   
-
 ###############################################
 
 condicion_inicial= True
@@ -233,31 +231,34 @@ zk[1::4] = y0
 zk[2::4] = vx0
 zk[3::4] = vy0
 
+
 done=zeros(Nparticulas,dtype=int32)
 impacting_set=zeros(Nparticulas,dtype=int32)
 print "Integrando"
 k=0
 if doit:
     while dt*k< int(tmax/dt-1)*dt:
+        t_paso=[dt*k,dt*(k+1)] # paso de tiempo el cual se evaluan las particulas 
+        #print t_paso        
         resultados.write("{}".format(dt*k))
-        savetxt(resultados,zk,fmt="%.24e",newline="")
+        savetxt(resultados,zk,fmt="%.10e ",newline="")
         resultados.write("\n")
 
         if k%100==0:
             print "k={}  t={}".format(k,k*dt)
-        done+=0
-
+        done*=0
         for i in range(Nparticulas):
             irange=slice(4*i,4*i+4)
-            zk_i=zk[irange]
+            zk_i=zk[irange]   # es un vector por particula, el cual considera 4 parametros x,y,vx,vy
             di=d
+
             if done[i]==0:
                 hay_impacto =False
                 impacting_set*=0
                 M=1
 
                 for j in range(i+1,Nparticulas):
-                    jrange=slice(d*j,4*j+4)
+                    jrange=slice(4*j,4*j+4)
                     zk_j=zk[jrange]
                     dj=d
                     rij=zk_j[0:2]-zk_i[0:2]
@@ -267,28 +268,37 @@ if doit:
                         impacting_set[0]=i
                         impacting_set[M]=j
                         M+=1
-                if hay_impacto:
+                if hay_impacto: # considera un impacto, comparando 2 particulas para el paso t*
                     zk_all=zk_i
                     for j in impacting_set[1:M]:
                         jrange=slice(4*j,4*j+4)
                         zk_j=zk[jrange]
                         zk_all=hstack((zk_all,zk_j))
+                    
                     ti=time()
-                    zkm1_all=odeint(particulas,zk_all,[dt*k,dt*(k+1)])
+
+                    zkm1_all=odeint(M_particulas,zk_all,t_paso)
                     tf=time()
                     tiempo_bloque_1+=tf-ti
                     
                     zkm1[irange]=zkm1_all[1,0:4]
+
                     done[i]=1
                     pos_j=1
                     for j in impacting_set[1:M]:
                         jrange=slice(4*j,4*j+4)
+                        #print zkm1[jrange]
                         zkm1[jrange]=zkm1_all[1,4*pos_j:4*pos_j+4]
+                        #print zkm1[jrange]
                         done[j]=1
                         pos_j+=1
                 else:
                     ti=time()
-                    zkm1_i=odeint(particula,zk_i,[dt*k,dt*(k+1)])
+                    #print ""
+                    #print zk_i
+                    zkm1_i=odeint(una_particula,zk_i,[dt*k,dt*(k+1)])
+                    #print zkm1_i
+    
                     tf=time()
                     tiempo_bloque_2+=tf-ti
 
@@ -297,6 +307,8 @@ if doit:
                     done[i]=1
         zk=zkm1
         k+=1
+
+
 """
 else:
     data=load("solution.npz")
