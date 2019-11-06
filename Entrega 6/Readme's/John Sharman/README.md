@@ -30,4 +30,5 @@ Simulación
 
 Concluciones
 ==========
-
+A partir del gráfico se pudo comprobar que se tiene un comportamiento lineal, que comparando con la entrega anterior, ya con 10 partículas tiene un desempeño mucho mejor, donde antes demoraba 154 segundos. Para el caso de 20 partículas se tiene donde pasa de 1006 a 159 segundos, se tiene una mejora de rendimiento de más de 85%. Efectivamente disminuyendo la carga de información al procesador reduciendo las iteraciones de las partículas sin riesgo de choque y guardando toda la información en el disco duro se obtiene un mejor rendimiento.
+Comparando as dos entregas se puede ver como un rendimiento lineal en situaciones más exigentes tiene un rendimiento muy superior a uno exponencial o cuadrático, dado que estos últimos suelen saturarse con mayor facilidad.
