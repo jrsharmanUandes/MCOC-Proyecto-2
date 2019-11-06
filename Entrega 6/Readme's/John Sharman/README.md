@@ -26,7 +26,7 @@ Simulación
       10 particulas     71,80 s
       20 particulas     159,68 s
 
-
+![imagen_entrega_03](https://github.com/jrsharmanUandes/MCOC-Proyecto-2/blob/master/Entrega%206/Readme's/John%20Sharman/Gr%C3%A1fico%20P%20vs%20T.png)
 
 Concluciones
 ==========
