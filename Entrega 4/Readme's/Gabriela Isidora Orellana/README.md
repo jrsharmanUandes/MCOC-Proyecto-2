@@ -15,21 +15,21 @@ Memoria instalada (RAM): 8.00 GB.
 
 Tipo de sistema:  Sistema operativo de 64 bits.
 
-Simulación 1:
+Simulación 20 particulas:
 ===============
 Tiempo de simulación: 00:03:34
 
 
-Simulación 2:
+Simulación 10 particulas:
 ===============
 Tiempo de simulación: 00:01:32
 
-Simulación 3:
+Simulación 5 particulas:
 ===============
 Tiempo de simulación: 00:00:45
 
 
-Simulación 4:
+Simulación 2 particulas:
 ===============
 Tiempo de simulación: 00:00:18
 
