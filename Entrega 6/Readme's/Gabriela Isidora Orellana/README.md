@@ -23,7 +23,7 @@ Tiempo total:
 Simulación 5 particulas:
 ===============
 Tiempo total:
-38.6689999104 segundos
+38.7 segundos
 
 
 Simulación 10 particulas:
