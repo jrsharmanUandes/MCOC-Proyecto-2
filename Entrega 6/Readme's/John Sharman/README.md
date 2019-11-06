@@ -21,11 +21,11 @@ Simulación
 
   Tiempo de simulación: 
   
-      2 particulas      6,3 s
-      5 particulas      33,4 s
-      10 particulas     154,4 s
-      20 particulas     1006,7 s
-      100 particulas
+      2 particulas      13,48 s
+      5 particulas      34,30 s
+      10 particulas     71,80 s
+      20 particulas     159,68 s
+
 
 
 Concluciones
