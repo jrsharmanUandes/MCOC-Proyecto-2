@@ -15,4 +15,25 @@ Memoria instalada (RAM): 8.00 GB.
 
 Tipo de sistema:  Sistema operativo de 64 bits.
 
+Simulación 2 particulas:
+===============
+Tiempo total:
+10.6 segundos
 
+Simulación 5 particulas:
+===============
+Tiempo total:
+38.6689999104 segundos
+
+
+Simulación 10 particulas:
+===============
+Tiempo total:
+81.9 segundos
+
+Simulación 20 particulas:
+===============
+Tiempo total:
+169.4 segunds
+
+Comparando estos resultados con los obtenidos en la entrega anterior, se puede concluir que si se obtuvo una disminución en el tiempo que tardaron los programas en ejecutarse, es decir, se logró optimizar el código. 
