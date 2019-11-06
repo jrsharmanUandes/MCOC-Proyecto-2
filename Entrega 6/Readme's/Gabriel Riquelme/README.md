@@ -15,3 +15,8 @@ Procesador: Intel(r) Core(TM) i7-7500U CPU @ 2.70GHz 2.90 GHz
 Memoria instalada (RAM): 12.00 GB.
 
 Tipo de sistema: Sistema operativo de 64 bits.
+
+Tiempo de simulación:
+==========
+En esta entrega el objetivo principal es de optimizar el código previamente ejecutado, para lo cual se registraron los tiempos de simulación para distintos casos de N partículas.
+
